@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikas Elle | Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Parallax Background Elements -->
+    <div class="parallax-container">
+        <div class="shape shape-1" data-speed="-2"></div>
+        <div class="shape shape-2" data-speed="5"></div>
+        <div class="shape shape-3" data-speed="2"></div>
+        <div class="shape shape-4" data-speed="-4"></div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="neu-header">
+        <nav class="navbar">
+            <a href="#home" class="logo">Vikas<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#innovation">Innovation</a></li>
+            </ul>
+            <div class="hamburger neu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="hero-content" data-speed="3">
+                <h2 class="greeting reveal">Hello, I'm</h2>
+                <h1 class="name reveal" style="--d: 0.1s">Vikas Elle</h1>
+                <h3 class="role reveal" style="--d: 0.2s">
+                    <span class="typewriter-target"></span><span class="typewriter-cursor">|</span>
+                </h3>
+                <p class="summary reveal" style="--d: 0.3s">Aspiring developer and innovator with hands-on experience in
+                    web development, Python, and AI-powered automation. Passionate about building real-world solutions.
+                </p>
+                <div class="cta-buttons reveal" style="--d: 0.4s">
+                    <a href="#projects" class="btn neu-btn-primary">View My Work</a>
+                    <a href="#contact" class="btn neu-btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image-container" data-speed="-1">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <h2 class="section-title reveal">About <span class="accent-color">Me</span></h2>
+            <div class="about-container">
+                <div class="about-card neu-flat reveal stagger">
+                    <div class="icon-wrapper neu-pressed"><i class="fas fa-user-circle accent-color"></i></div>
+                    <h3>Profile</h3>
+                    <p>Passionate about building real-world solutions such as automation systems, productivity tools,
+                        and energy innovations. Skilled in problem-solving, workflow automation, and developing
+                        impactful technology-driven projects.</p>
+                </div>
+
+                <div class="about-card neu-flat reveal stagger">
+                    <div class="icon-wrapper neu-pressed"><i class="fas fa-graduation-cap accent-color"></i></div>
+                    <h3>Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4>Bachelor of Technology</h4>
+                            <p class="institution">Aurora deemed to be University</p>
+                            <span class="neu-tag date">2025 - 2029</span>
+                        </div>
+                        <div class="timeline-item mt-3">
+                            <h4>Technology Partner</h4>
+                            <p class="institution">nxtwave institute of advanced technologies</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-card neu-flat reveal stagger">
+                    <div class="icon-wrapper neu-pressed"><i class="fas fa-language accent-color"></i></div>
+                    <h3>Languages</h3>
+                    <ul class="language-list">
+                        <li><span class="lang">English</span> <span
+                                class="proficiency accent-color font-weight-bold">Fluent</span></li>
+                        <li><span class="lang">German</span> <span
+                                class="proficiency accent-color font-weight-bold">Basic</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <h2 class="section-title reveal">My <span class="accent-color">Skills</span></h2>
+            <div class="skills-grid">
+                <div class="skill-tag neu-btn reveal stagger"><span>HTML</span></div>
+                <div class="skill-tag neu-btn reveal stagger"><span>CSS</span></div>
+                <div class="skill-tag neu-btn reveal stagger"><span>JavaScript</span></div>
+                <div class="skill-tag neu-btn reveal stagger"><span>Python</span></div>
+                <div class="skill-tag neu-btn reveal stagger"><span>DBMS</span></div>
+                <div class="skill-tag neu-btn reveal stagger"><span>3D-Modeling in Fusion</span></div>
+                <div class="skill-tag neu-btn reveal stagger"><span>Gen-AI</span></div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <h2 class="section-title reveal">Featured <span class="accent-color">Projects</span></h2>
+
+            <div class="project-category">
+                <h3 class="category-title reveal">
+                    <div class="icon-wrapper neu-pressed small"><i class="fas fa-laptop-code accent-color"></i></div>
+                    Web Development
+                </h3>
+                <div class="project-grid">
+                    <div class="project-card neu-flat reveal stagger">
+                        <div class="project-content">
+                            <h4>MyStep - Student Roadmap Planner</h4>
+                            <p>Web-based roadmap planner for students to organize goals and track progress.</p>
+                        </div>
+                        <a href="#" class="project-link neu-btn-circle"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="project-card neu-flat reveal stagger">
+                        <div class="project-content">
+                            <h4>Unified App Portal</h4>
+                            <p>All-in-One Access Platform. Centralized web platform for accessing multiple apps with
+                                improved usability.</p>
+                        </div>
+                        <a href="#" class="project-link neu-btn-circle"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-category mt-5">
+                <h3 class="category-title reveal">
+                    <div class="icon-wrapper neu-pressed small"><i class="fab fa-python accent-color"></i></div> Python
+                </h3>
+                <div class="project-grid">
+                    <div class="project-card neu-flat reveal stagger">
+                        <div class="project-content">
+                            <h4>Password Strength Validator</h4>
+                            <p>Checks password security based on complexity rules.</p>
+                        </div>
+                        <a href="#" class="project-link neu-btn-circle"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="project-card neu-flat reveal stagger">
+                        <div class="project-content">
+                            <h4>Zodiac Compatibility Calculator</h4>
+                            <p>Identifies zodiac sign from user's birth date and calculates compatibility.</p>
+                        </div>
+                        <a href="#" class="project-link neu-btn-circle"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Innovation Section -->
+        <section id="innovation" class="innovation section">
+            <h2 class="section-title reveal">Innovation <span class="accent-color">& Idea</span></h2>
+            <div class="innovation-card neu-flat reveal">
+                <div class="innovation-icon neu-pressed" data-speed="1">
+                    <i class="fas fa-bolt accent-color"></i>
+                </div>
+                <div class="innovation-details">
+                    <h3>RF Energy Harvesting System (Radi-Energy)</h3>
+                    <ul>
+                        <li class="neu-list-item">
+                            <div class="check-wrap neu-pressed"><i class="fas fa-check accent-color"></i></div>
+                            <span>Designed a system to convert ambient RF signals into usable electrical energy.</span>
+                        </li>
+                        <li class="neu-list-item">
+                            <div class="check-wrap neu-pressed"><i class="fas fa-check accent-color"></i></div>
+                            <span>Focused on sustainable and alternative power solutions.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="contact">
+        <div class="contact-container neu-flat reveal">
+            <h2>Let's Connect</h2>
+            <p>Feel free to reach out for collaborations or just a friendly chat!</p>
+
+            <div class="contact-links">
+                <a href="tel:9014896508" class="contact-item neu-btn reveal stagger">
+                    <i class="fas fa-phone accent-color"></i>
+                    <span>9014896508</span>
+                </a>
+                <a href="mailto:vikaselle196@gmail.com" class="contact-item neu-btn reveal stagger">
+                    <i class="fas fa-envelope accent-color"></i>
+                    <span>Email Me</span>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" class="contact-item neu-btn reveal stagger">
+                    <i class="fab fa-linkedin accent-color"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://www.github.com" target="_blank" class="contact-item neu-btn reveal stagger">
+                    <i class="fab fa-github accent-color"></i>
+                    <span>GitHub</span>
+                </a>
+                <div class="contact-item location neu-pressed reveal stagger">
+                    <i class="fas fa-map-marker-alt accent-color"></i>
+                    <span>Hyderabad</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Vikas Elle. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
