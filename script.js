@@ -39,6 +39,19 @@ navItems.forEach(item => {
 
 // Active Navigation Link Update on Scroll
 const sections = document.querySelectorAll('section, footer');
+const indicator = document.querySelector('.nav-indicator');
+
+function updateMagicIndicator(activeItem) {
+    if (!indicator || !activeItem) return;
+    // Calculate relative position inside navLinks
+    const itemRect = activeItem.getBoundingClientRect();
+    const navRect = navLinks.getBoundingClientRect();
+    // Offset left is item's left minus nav's left
+    const offsetLeft = itemRect.left - navRect.left;
+    
+    indicator.style.width = `${itemRect.width}px`;
+    indicator.style.transform = `translateX(${offsetLeft}px)`;
+}
 
 window.addEventListener('scroll', () => {
     let current = '';
@@ -53,12 +66,44 @@ window.addEventListener('scroll', () => {
         }
     });
 
+    let currentActive = null;
     navItems.forEach(li => {
         li.classList.remove('active');
         if (li.getAttribute('href') === `#${current}`) {
             li.classList.add('active');
+            currentActive = li;
         }
     });
+    
+    if (currentActive && window.innerWidth > 768) {
+        updateMagicIndicator(currentActive);
+    }
+});
+
+// Magic Indicator Hover Effects
+navItems.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+        if (window.innerWidth > 768) {
+            updateMagicIndicator(item);
+        }
+    });
+});
+
+navLinks.addEventListener('mouseleave', () => {
+    if (window.innerWidth > 768) {
+        const active = document.querySelector('.nav-links li a.active');
+        updateMagicIndicator(active);
+    }
+});
+
+// Init magic indicator
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        if (window.innerWidth > 768) {
+            const active = document.querySelector('.nav-links li a.active');
+            if (active) updateMagicIndicator(active);
+        }
+    }, 100);
 });
 
 
